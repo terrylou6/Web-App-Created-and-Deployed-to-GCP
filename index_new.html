@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  
+  <h2>Rohlik Orders Prediction</h2>
+  
+  <form method="POST" action="/">
+    warehouse:<br>
+    <input type="number" name="warehouse" value=0>
+    <br><br>
+    holiday_name:<br>
+    <input type="number" name="holiday_name" value=0>
+    <br><br>
+    holiday:<br>
+    <input type="number" name="holiday" value=0>
+    <br><br>
+    shops_closed:<br>
+    <input type="number" name="shops_closed" value=0>
+    <br><br>
+    winter_school_holidays:<br>
+    <input type="number" name="winter_school_holidays" value=0>
+    <br><br>
+    school_holidays:<br>
+    <input type="number" name="school_holidays" value=0>
+    <br><br>
+    year:<br>
+    <input type="number" name="year" value=2020>
+    <br><br>    
+    month:<br>
+    <input type="number" name="month" value=1>
+    <br><br>
+    day:<br>
+    <input type="number" name="day" value=1>
+    <br><br>
+    dayofweek:<br>
+    <input type="number" name="dayofweek" value=0>
+    <br><br>
+    is_weekend:<br>
+    <input type="number" name="is_weekend" value=0>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  {% if pred %}
+  <p>The predicted amount of orders with inputs is {{ pred }}</p>
+  {% endif %}
+
+  </body>
+</html>
